@@ -1,13 +1,13 @@
+# Lightweight requirements for Vercel deployment (no torch/scipy/netCDF4)
+# The ML inference is served via a separate container (Docker/Cloud Run/Render)
+# This file powers the API gateway / stub layer only.
 fastapi>=0.111.0
-uvicorn[standard]>=0.29.0
+uvicorn>=0.29.0
 pydantic>=2.7.0
 pydantic-settings>=2.2.3
 python-multipart>=0.0.9
-xarray>=2024.3.0
-netCDF4>=1.7.1
-numpy>=1.26.4
-scipy>=1.13.0
-torch>=2.3.0
 pyyaml>=6.0.1
 aiofiles>=23.2.1
 orjson>=3.10.3
+httpx>=0.27.0
+numpy>=1.26.4
